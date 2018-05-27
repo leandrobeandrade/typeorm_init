@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Ajax-2</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+	
+	<button id="teste">Clique para o Ajax</button>
+		
+	<script>
+
+		$(document).ready(function(){
+			$('#teste').click(function(){
+				var testando = $.ajax();
+
+				$.ajax({
+  					method: "GET",
+  					url: "ajax.json",
+  					data: testando
+				}) 
+  				.done(function( msg ) {
+  					setTimeout(function(){
+  						alert( "Dados: " + msg );
+  					},2000);	
+  				});
+			});	
+		});			
+	</script>
+</body>
+</html>
