@@ -1,7 +1,20 @@
-# Awesome Project Build with TypeORM
+# Projeto API Node com TypeORM 
 
-Steps to run this project:
+## Requisitos
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+- typeorm
+- ts-node
+- mysql
+
+## Comandos
+
+1. npm install -g typeorm
+2. npm install -g ts-node (não é obrigatório ser global)
+3. git clone https://github.com/leandrobeandrade/typeorm_init.git
+4. npm install
+5. configurar o arquivo `ormconfig.json`
+6. npm run start
+
+![](https://github.com/leandrobeandrade/typeorm_init/blob/master/evaluations.jpeg)
+![](https://github.com/leandrobeandrade/typeorm_init/blob/master/trainings.jpeg)
+![](https://github.com/leandrobeandrade/typeorm_init/blob/master/endpoints.jpeg)
